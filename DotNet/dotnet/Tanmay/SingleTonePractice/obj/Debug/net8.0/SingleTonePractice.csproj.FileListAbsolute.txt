@@ -1,0 +1,7 @@
+C:\Users\IET\Pictures\DOT_NET\Tanmay\SingleTonePractice\obj\Debug\net8.0\SingleTonePractice.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\IET\Pictures\DOT_NET\Tanmay\SingleTonePractice\obj\Debug\net8.0\SingleTonePractice.AssemblyInfoInputs.cache
+C:\Users\IET\Pictures\DOT_NET\Tanmay\SingleTonePractice\obj\Debug\net8.0\SingleTonePractice.AssemblyInfo.cs
+C:\Users\IET\Pictures\DOT_NET\Tanmay\SingleTonePractice\obj\Debug\net8.0\SingleTonePractice.csproj.CoreCompileInputs.cache
+C:\Users\IET\Pictures\DOT_NET\Tanmay\SingleTonePractice\obj\Debug\net8.0\SingleTonePractice.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\IET\Pictures\DOT_NET\Tanmay\SingleTonePractice\obj\Debug\net8.0\SingleTonePractice.RazorAssemblyInfo.cache
+C:\Users\IET\Pictures\DOT_NET\Tanmay\SingleTonePractice\obj\Debug\net8.0\SingleTonePractice.RazorAssemblyInfo.cs
