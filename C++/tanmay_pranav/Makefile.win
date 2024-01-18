@@ -1,0 +1,40 @@
+# Project: paint_brsh
+# Makefile created by Dev-C++ 5.11
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+OBJ      = paintbrush/main.o paintbrush/Shape.o paintbrush/Rectangle.o paintbrush/Line.o paintbrush/Point.o
+LINKOBJ  = paintbrush/main.o paintbrush/Shape.o paintbrush/Rectangle.o paintbrush/Line.o paintbrush/Point.o
+LIBS     = -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib" -L"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/lib" -static-libgcc
+INCS     = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include"
+CXXINCS  = -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/x86_64-w64-mingw32/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include" -I"C:/Program Files (x86)/Dev-Cpp/MinGW64/lib/gcc/x86_64-w64-mingw32/4.9.2/include/c++"
+BIN      = paint_brsh.exe
+CXXFLAGS = $(CXXINCS) 
+CFLAGS   = $(INCS) 
+RM       = rm.exe -f
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	${RM} $(OBJ) $(BIN)
+
+$(BIN): $(OBJ)
+	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+paintbrush/main.o: paintbrush/main.cpp
+	$(CPP) -c paintbrush/main.cpp -o paintbrush/main.o $(CXXFLAGS)
+
+paintbrush/Shape.o: paintbrush/Shape.cpp
+	$(CPP) -c paintbrush/Shape.cpp -o paintbrush/Shape.o $(CXXFLAGS)
+
+paintbrush/Rectangle.o: paintbrush/Rectangle.cpp
+	$(CPP) -c paintbrush/Rectangle.cpp -o paintbrush/Rectangle.o $(CXXFLAGS)
+
+paintbrush/Line.o: paintbrush/Line.cpp
+	$(CPP) -c paintbrush/Line.cpp -o paintbrush/Line.o $(CXXFLAGS)
+
+paintbrush/Point.o: paintbrush/Point.cpp
+	$(CPP) -c paintbrush/Point.cpp -o paintbrush/Point.o $(CXXFLAGS)
